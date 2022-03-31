@@ -8,7 +8,7 @@ app.use(express.json());
 app.use('/api', routes)
 
 
-const PORT = process.env.port || 3000
+const PORT = process.env.port || 3000;
 const start = async() => {
     try {
         await Connection.open()
@@ -19,4 +19,5 @@ const start = async() => {
         console.log(error, `error in listening to server`);
     }
 }
+
 start();
