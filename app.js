@@ -19,5 +19,6 @@ const start = async() => {
         console.log(error, `error in listening to server`);
     }
 }
+console.log(PORT)
 
 start();
